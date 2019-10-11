@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer">
+        <link rel="icon" type="image/png" href="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/favicon-32x32.png" sizes="32x32">
+        <link rel="shortcut icon" href="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/favicon.ico" type="image/x-icon">
+        <title></title>
+        <link rel="stylesheet" href="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/css/style.css">
+        <style type="text/css" media="screen">#left-swf {visibility:hidden}#right-swf {visibility:hidden}#left-swf {visibility:visible}#right-swf {visibility:visible}</style>
+        <style>
+            .style-plus {
+                font-size: 60px;
+                display: flex;
+                align-items: center;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            @media (max-width: 800px) {
+                .page {
+                    background-size: cover;
+                }
+                
+                .page__title {
+                    left: 10px;
+                    top: 140px;
+                }
+                .game-layout {
+                    top: 125px;
+
+                }
+            }
+        </style>
+        <style>
+            .logo__img {
+                width: auto;
+                
+            }
+            .page__logo {
+                left: 5%;
+            }
+            .page__logo {
+                text-align: center;
+                left: 0;
+            }
+            @media (max-width: 800px) {
+                .page__logo {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .title__get_line {
+                    margin-left: -20px;
+                }
+                .win-circle__title {
+                    font-size: 26px;
+                }
+            }
+             @media (max-width: 767px) {
+                .wheel {
+                    max-width: 110%;
+                    height: 410px;
+                }
+           
+                .wheel__win-frame {
+                    max-width: 140px!important;
+                    top: 20px;
+                }
+
+
+                .game-layout__decoration_gonzo{
+                    z-index: -1;
+                    display: block;
+                    width: 140px;
+                    bottom: none!important;
+                    top: 0!important;
+                    height: 60%;
+                }
+
+                .achievements__item {
+                    max-width: 110px;
+                }
+            }
+            @media (max-width: 350px) {
+               .wheel__win-frame  {
+                    max-width: 50%!important;
+                    top: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body class="page">
+
+        <div class="page__wrap">
+            
+            <h1 class="title page__title">
+                <img src="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/text-spin-en.png" class="title__spin" alt="Крути колесо!"><br>
+                <img src="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/text-get-prizes-en.png" class="title__get" alt="получай подарки!">
+                <img src="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/img/text-get-prizes-line-en.png" class="title__get title__get_line" alt="получай подарки!">
+            </h1>
+            <div class="game-layout">
+                <div class="game-layout__wheel">
+                    <div class="wheel wheel_animated">
+                        <div class="wheel__shadow"></div>
+                        <div class="wheel__holder">
+                            <img src="https://derbi.tris.space/pics/wheel.png" alt="" class="wheel__spinner" style="transform: rotate(-45deg); transform-origin: 50% 50% 0px;">
+                            <div class="wheel__win-frame"></div>
+                            <div class="wheel__button-holder wheel__button-holder_blinking">
+                                <button class="round-button wheel__button spin-trigger">Spin</button>
+                            </div>
+                        </div>
+                        <div class="wheel__lamps lamps"></div>
+                    </div>
+                </div>
+                <div class="game-layout__panel">
+                    <div class="counter"><span class="counter__text">Tentative laissée:</span><span class="counter__value">2</span></div>
+                    <div class="achievements">
+                        <div class="achievements__item achievements__item_empty achievements__item_animated"></div>
+                    </div>
+                </div>
+                <div class="game-layout__decoration game-layout__decoration_mushrooms"></div>
+                <div class="game-layout__decoration game-layout__decoration_stars"></div>
+                <div class="game-layout__decoration game-layout__decoration_gonzo"></div>
+            </div>
+        </div>
+        <div class="page__footer">
+            <div class="payments-white"></div>
+        </div>
+        <div class="fewmodal" id="modal-content">
+            <div class="fewmodal__body" id="level-1">
+                <div class="fewmodal__content">
+                    <div class="win-circle">
+                        <div class="win-circle__body">
+                            <h2 class="win-circle__title">FÉLICITATIONS!</h2>
+                            <p class="win-circle__you-win">Vous gagnez</p>
+                            <p class="win-circle__text-group">
+                                <strong class="win-circle__value win-circle__accent" style="font-size: 36px;">$100 BONUS</strong><br>
+                                
+                            </p>
+                            <span class="button win-circle__button spin-trigger">Spin</span>
+                        </div>
+                        <div class="win-circle__lamps lamps"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fewmodal__body" id="level-2">
+                <div class="fewmodal__content">
+                    <div class="win-circle">
+                        <div class="win-circle__body">
+                            <h2 class="win-circle__title">FÉLICITATIONS!</h2>
+                            <p class="win-circle__you-win">
+                                Vous gagnez
+                            </p>
+                            <div class="achievements achievements_inline win-circle__achievements">
+                                <div class="achievements__item">
+                                    <img src="https://derbi.tris.space/pics/100.png" alt="+100%" class="achievements__badge">
+                                    
+                                </div>
+                                <div class="style-plus">
+                                    +  
+                                </div>
+                                
+                                <div class="achievements__item">
+                                    <img src="https://derbi.tris.space/pics/700fs.png" alt="200 спинов" class="achievements__badge">
+                                    
+                                </div>
+                            </div>
+                            <p style="font-size: 21px;font-weight: 600;">Vous avez gagné 700 chances gratuites d’empocher<br> ce jackpot pour juste $10</p>
+                            
+                            <a id="linkFull" href="https://click.cr-brands.net/affiliate/referral.asp?site=rea&url=brw/qtr/1&seg=anvadcplcafrsoipr&lid=284413&aff_id=6710_52419_23761_4408_57_3527_3-mark-II|{clickid}|" class="button win-circle__button" target="__blank">JE VEUX 700 TOURS MAINTENANT</a>
+                        </div>
+                        <div class="win-circle__lamps lamps"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="achievements achievements_hidden">
+            <div class="achievements__item achievements__item_empty"></div>
+            <div class="achievements__item">
+                <img src="https://derbi.tris.space/pics/100.png" alt="" class="achievements__badge">
+                <p class="achievements__description"></p>
+            </div>
+            <div class="achievements__item">
+                <img src="https://derbi.tris.space/pics/700fs.png" alt="" class="achievements__badge">
+                <p class="achievements__description"></p>
+            </div>
+        </div>
+        <script src="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/js/jquery.min.js"></script>
+        <script src="https://d1cakcie9i0u2p.cloudfront.net/lpbo/hagf76/js/main.min.js"></script>
+        <script>
+var  linkFull = document.location.href; 
+var regexp = /fbid=([^&]+)/i;
+fbId = regexp.exec(linkFull)[1];
+
+//fbId = regexp.exec(document.location.search)[1];
+  console.log(fbId);    
+
+        var link = "https://click.cr-brands.net/affiliate/referral.asp?site=rea&url=brw/qtr/1&seg=anvadcplcafrsoipr&lid=284413&aff_id=6710_52419_23761_4408_57_3527_3-mark-II|{clickid}|" + fbId+'|';
+$('#linkFull').attr('href',link);
+    </script>
+    </body>
+</html>
+
